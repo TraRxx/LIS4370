@@ -1,0 +1,33 @@
+ Name <- c("Jeb", “Donald”, "Ted”, “Marco” “Carly”, “Hillary”, “Berine”)
+
+Error: unexpected input in "Name <- c("Jeb", “"
+
+ Name <- c("Jeb", "Donald", "Ted", "Marco" "Carly", "Hillary", "Berine")
+
+Error: unexpected string constant in "Name <- c("Jeb", "Donald", "Ted", "Marco" "Carly""
+
+ Name <- c("Jeb", "Donald", "Ted", "Marco", "Carly", "Hillary", "Berine")
+
+ 
+
+ ABC political poll results <- c(4, 62 51, 21, 2, 14, 15)
+
+Error: unexpected symbol in "ABC political"
+
+ Name <- c("Jeb", "Donald", "Ted", "Marco", "Carly", "Hillary", "Berine")
+
+ 
+
+ ABC political poll results <- c(4, 62, 51, 21, 2, 14, 15)
+
+Error: unexpected symbol in "ABC political"
+
+ Name <- c("Jeb", "Donald", "Ted", "Marco", "Carly", "Hillary", "Berine")
+
+
+
+ ABC_political_poll_results <- c(4, 62, 51, 21, 2, 14, 15)
+
+ 
+
+ CBS_political_poll_results <- c(12, 75, 43, 19, 1, 21, 19)
