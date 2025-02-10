@@ -1,0 +1,17 @@
+
+Frequency <- c(0.6, 0.3, 0.4, 0.4, 0.2, 0.6, 0.3, 0.4, 0.9, 0.2)
+BP <- c(103, 87, 32, 42, 59, 109, 78, 205, 135, 176)
+First <- c(1, 1, 1, 1, 0, 0, 0, 0, NA, 1)
+Second <- c(0, 0, 1, 1, 0, 0, 1, 1, 1, 1)
+FinalDecision <- c(0, 1, 0, 1, 0, 1, 0, 1, 1, 1)
+BP_normalized <- (BP - min(BP, na.rm = TRUE)) / (max(BP, na.rm = TRUE) - min(BP, na.rm = TRUE))
+Combine_df <- data.frame(column1 = Frequency, column2 = BP_normalized, column3 = First, column4 = Second, column5 = FinalDecision)
+Combine_df
+colnames(Combine_df) <- c('Frequency', 'BP_normal', 'First', 'Second', 'FinalDecision')
+boxplot(Combine_df)
+str(Combine_df)
+hist(Combine_df$Frequency)
+hist(Combine_df$BP_normal)
+hist(Combine_df$First)
+hist(Combine_df$Second)
+hist(Combine_df$FinalDecision)
